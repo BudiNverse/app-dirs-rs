@@ -32,6 +32,8 @@
 //!     // app_dir(AppDataType::UserCache, &APP_INFO, "cache/images")
 //! }
 //! ```
+#[macro_use] extern crate serde;
+
 mod common;
 pub use common::*;
 mod imp;

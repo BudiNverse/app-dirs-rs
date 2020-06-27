@@ -17,7 +17,7 @@ use std;
 ///
 /// The `author` property is currently only used by Windows, as macOS and *nix
 /// specifications don't require it. Make sure your `name` string is unique!
-#[derive(Clone, Debug, PartialEq, Eq, Hash)]
+#[derive(Clone, Debug, PartialEq, Eq, Hash, Serialize, Deserialize)]
 pub struct AppInfo {
     /// Name of your app (e.g. "Hearthstone").
     pub name: &'static str,
